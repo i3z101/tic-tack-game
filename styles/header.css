@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+.header_container{
+    background-color: #03506f;
+    padding-top: 3rem;
+}
+
+.header_title {
+    color: white;
+    font-family: var(--font-en);
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 3rem;
+}
+
+.header_icons_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_icon {
+    position: absolute;
+    top: -10rem;
+    left: 5rem;
+    animation: backInLeft;
+    animation-duration: 1s;
+}
+
+.animate__bounceInUp {
+    animation: bounceInUp;
+    animation-duration: 1s;
+}
+
+.x_icon {
+    position: absolute;
+    top: 2.1rem;
+    left: 8.8rem;
+}
+
+.single_icon {
+    margin-bottom: 3rem;
+    border-bottom: 5px solid yellow;
+    padding-bottom: 0.5rem;
+}
+
+.animate__backOutUp {
+    animation: backOutUp;
+    animation-duration: 1s;
+}
+
+.grid_icon {
+    position: absolute;
+    top: -6rem;
+    left: 1rem;
+}
+
+.x_icon {
+    position: absolute;
+    top: 0.7rem;
+    left: 3.4rem;
+}
+
+.win_text {
+    position: absolute;
+    font-size: 35px;
+    font-family: 'Mogra', cursive;
+    color: white;
+    top: -2rem;
+    left: 0.5rem;
+}
+
+@media only screen and (min-width: 735px) {
+    .header_title {
+        font-size: 30px;
+        margin-bottom: 5rem;
+    }
+    .header_icons_container {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .grid_icon {
+        position: absolute;
+        top: -10rem;
+        left: 5rem;
+    }
+    
+    .x_icon {
+        top: 2.1rem;
+        left: 8.8rem;
+    }
+
+    .win_text {
+        left: 4.2rem;
+    }
+}
