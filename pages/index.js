@@ -3,6 +3,8 @@ import Game from "../components/game"
 import Header from "../components/header"
 import Nav from "../components/nav"
 import {useRouter} from 'next/router';
+import Head from 'next/head'
+
 export default function Home() {
   const router = useRouter();
 
@@ -22,6 +24,11 @@ export default function Home() {
 
   return (
     <Fragment>
+      <Head >
+          <title>Home</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="Tic Tac Home Page"  />
+        </Head>
       <Nav/>
       <Header/>
       <button className="start_game_btn" onClick={toGameDash}>START THE GAME</button>

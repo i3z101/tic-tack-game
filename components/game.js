@@ -254,9 +254,9 @@ const Game = ({gameId, visitor}) => {
                 <button className="copy_text" onClick={copyTextBtn}>{copyText}</button>
             {/* </div> */}
         </div>
-       {start ? <Fragment> <section className="grid_container">
+       {start ? <Fragment> <section style={{display: resultInfo.showResult ? 'none' : 'grid'}} className="grid_container">
             {GAME_GRID.map((grid, index)=> (
-                <div key={index} className="grid_item" id={index.toString()} onClick={()=>{
+                <div style={{pointerEvents: turn !== user ? 'none' : 'painted'}} key={index} className="grid_item" id={index.toString()} onClick={()=>{
                     addShape(index, user);
                     socket.emit("play", {index: index, user: user, gameId: gameId});
                     setTurn(turn == 0 ? 1 : 0);
