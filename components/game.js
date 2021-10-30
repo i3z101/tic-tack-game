@@ -7,7 +7,7 @@ import {useRouter} from "next/router";
 
 const GAME_GRID = [0,1,2,3,4,5,6,7,8];
 const GAME_GRID_LENGTH = GAME_GRID.length;
-const socket = io("http://localhost:8000");
+const socket = io("https://mighty-dawn-56555.herokuapp.com/");
 let timer;
 
 const Game = ({gameId, visitor}) => {
