@@ -250,7 +250,7 @@ const Game = ({gameId, visitor}) => {
             <p className="turn_text">Turn: <span style={{color:'yellow'}}> {turn == 0 ? 'X' : 'O'} </span></p>
             <p className="timer">Timer: <span style={{color:'yellow'}}>{countTimer}s</span></p>
             {/* <div style={{display:'flex', flexDirection:'column'}}> */}
-                <p className="turn_text" style={{marginTop: isMobile && '1rem', fontSize: isMobile ? '12px' : '16px'}}>GAME URL: <span  id="game_id" style={{color:'yellow'}}>{"http://localhost:3000" + route.asPath+"?visitor=true"}</span></p>
+                <p className="turn_text" style={{marginTop: isMobile && '1rem', fontSize: isMobile ? '12px' : '16px'}}>GAME URL: <span  id="game_id" style={{color:'yellow'}}>{"https://tic-tac-mu.vercel.app" + route.asPath+"?visitor=true"}</span></p>
                 <button className="copy_text" onClick={copyTextBtn}>{copyText}</button>
             {/* </div> */}
         </div>
